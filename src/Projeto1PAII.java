@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.Random;
 //Classe Principal
 
 public class Projeto1PAII {
@@ -19,9 +18,12 @@ public class Projeto1PAII {
                     adivinha.num_adivinha();
                     break;
 
+                case 3:
+                    sudoku.game();
+                    break;
             }
         } while (Option != 4 );
-        }
     }
+}
 
 
