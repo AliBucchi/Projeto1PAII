@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+//Classe Para gerar e adivinhar um número
 
 public class adivinha {
     public static void num_adivinha() {

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//Classe Para desenhar o Padrão
 
 public class padrao {
     public static void desenho_padrao() {
