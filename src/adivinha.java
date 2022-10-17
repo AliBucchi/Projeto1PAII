@@ -13,6 +13,7 @@ public class adivinha {
 
         Random geradorDeAleatorios = new Random();
 
+        //Gerar um número de 1 a 1000
         sorteado = geradorDeAleatorios.nextInt(1000) + 1;
         System.out.println("Número entre 1 e 1000 sorteado!");
 
@@ -20,6 +21,7 @@ public class adivinha {
             System.out.printf("\n-----------------\n");
             System.out.println("Número de tentativas: " + tentativas);
 
+            //Pedir e verificar Input do utilizador
             do{
                 System.out.print("Qual seu palpite: ");
                 user_val = entrada.nextLine();
@@ -27,6 +29,7 @@ public class adivinha {
             palpite = Integer.parseInt(user_val);
             tentativas++;
 
+            //Informar o utilizador da diferença entre o número gerado e o número introduzido
             if (palpite > sorteado) {
                 System.out.println("Palpite muito alto");
             } else {
@@ -35,10 +38,9 @@ public class adivinha {
 
         } while (palpite != sorteado);
 
-        if (palpite == sorteado) {
-            System.out.println("Voce venceu!");
-            System.out.println("O número era: " + sorteado);
-            System.out.println("Você tentou " + tentativas + " vezes");
-        }
+        //Informar o Utilizador que acertou
+        System.out.println("Voce venceu!");
+        System.out.println("O número era: " + sorteado);
+        System.out.println("Você tentou " + tentativas + " vezes");
     }
 }

@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e9ab46-dbc2-4cfb-b2c0-11500795b3be" name="Changes" comment="Versão 1.0">
+    <list default="true" id="98e9ab46-dbc2-4cfb-b2c0-11500795b3be" name="Changes" comment="Versão 1.1">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executável/Projeto1PAII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executável/Projeto1PAII.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executável/adivinha.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executável/manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executável/menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executável/padrao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Executável/sudoku.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Projeto1PAII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projeto1PAII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adivinha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adivinha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/padrao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/padrao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sudoku.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +49,9 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Projeto1PAII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -89,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666017791448</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Versão 1.0">
+      <created>1666018043040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666018043040</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,7 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeira utilização de classes." />
     <MESSAGE value="Versão 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versão 1.0" />
+    <MESSAGE value="Versão 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versão 1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

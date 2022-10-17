@@ -23,13 +23,14 @@ public class sudoku {
 
         Random pos_gen = new Random();
 
+        //Gerar um número para cada posição na matriz
         for(i = 0; i < 9; i++){
             for(k = 0; k < 9; k++){
                 position[i][k] = pos_gen.nextInt(10);
             }
         }
 
-        //Corrigir e apresentar o Sudoku
+        //Remover repetições e apresentar o Sudoku
         System.out.println("X  1 2 3 4 5 6 7 8 9");
 
         for(i = 0; i < 9; i++){
@@ -144,8 +145,7 @@ public class sudoku {
                 }
             }
 
-            numcheck = 0;
-
+            //Informar o utilizador sobre os possíveis números para aquela posição
             if(valid_nums.size() == 0){
                 System.out.println("Não existem números disponíveis");
             }
@@ -153,7 +153,8 @@ public class sudoku {
                 System.out.println("Os numeros disponiveis são: " + valid_nums);
                 total_cell--;
 
-                while (numcheck == 0){
+                //Pedir um número e verificar a sua validade
+                while (!valid_nums.contains(Valor_Cell)){
                     do{
                         System.out.println("Introduza um destes " + valid_nums.size() + " valores: ");
                         CheckInput = ler.nextLine();
@@ -161,13 +162,7 @@ public class sudoku {
 
                     Valor_Cell = Integer.parseInt(CheckInput);
 
-                    for(h = 0; h < valid_nums.size(); h++){
-                        if(Valor_Cell == valid_nums.get(h)){
-                            numcheck = 1;
-                            break;
-                        }
-                    }
-                    if(numcheck == 0){
+                    if(!valid_nums.contains(Valor_Cell)){
                         System.out.println("O valor introduzido não é válido");
                     }
                 }
@@ -184,7 +179,7 @@ public class sudoku {
                 }
             }
 
-            //verificar se o utilizador deseja continuar
+            //Fail-safe no caso de todas as posições ficarem ocupadas
             if(total_cell == 0){
                 ans_check = 1;
                 System.out.println("Já não é possível modificar nehuma posição.");
@@ -193,10 +188,11 @@ public class sudoku {
                 ans_check = 0;
             }
 
+            //verificar se o utilizador deseja continuar
             while(ans_check == 0) {
 
                 do {
-                    System.out.println("\nPara terminar, introduza o número 0.\nPara continuar introduza o nuúmero 1: ");
+                    System.out.println("\nPara terminar, introduza o número 0.\nPara continuar introduza o número 1: ");
                     CheckInput = ler.nextLine();
                 } while (menu.check_int(CheckInput) == 0);
 
@@ -209,5 +205,3 @@ public class sudoku {
         }
     }
 }
-
-

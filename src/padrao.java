@@ -10,6 +10,7 @@ public class padrao {
         int tamanhoPadrao;
         int i, j, k;
 
+        //Escolha do tamanho do padrão, e respetiva verificação
         do{
             do{
                 System.out.println("Escolha o tamanho do padrão a ser criado com um numero entre 1 e 10: ");
@@ -21,7 +22,7 @@ public class padrao {
         }while(tamanhoPadrao < 1 || tamanhoPadrao > 10);
 
 
-
+        //Gerar o Primeiro Padrão
         System.out.println("Padrão A");
         for (i = 1; i <= tamanhoPadrao; i++) {
             for (j = 1; j <= i; j++) {
@@ -30,6 +31,7 @@ public class padrao {
             System.out.println();
         }
 
+        //Gerar o Segundo Padrão
         System.out.println("\nPadrão B");
         for (i = 1; i <= tamanhoPadrao; i++) {
             for (j = 1; j <= (tamanhoPadrao + 1) - i; j++) {
@@ -38,6 +40,7 @@ public class padrao {
             System.out.println();
         }
 
+        //Gerar o Terceiro Padrão
         System.out.println("\nPadrão C");
         for (i = 1; i <= tamanhoPadrao; i++) {
             for (j = i; j < tamanhoPadrao; j++) {

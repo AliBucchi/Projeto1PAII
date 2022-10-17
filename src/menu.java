@@ -6,6 +6,7 @@ public class menu {
         Scanner ler = new Scanner(System.in);
         String choice;
 
+        //Apresentar Menu
         System.out.println("\n\nEscolha uma das opções de jogos a seguir: ");
 
         System.out.println("Digite 1 para: Desenho dos padrões");
@@ -13,14 +14,17 @@ public class menu {
         System.out.println("Digite 3 para: Sudoku simplificado");
         System.out.println("Digite 4 para: Encerrar e sair dos jogo");
 
+        //Verificar se a escolha do utilizador é válida
         do{
             System.out.print("Escolha a sua opção: ");
             choice = ler.nextLine();
         }while(check_int(choice) == 0);
 
+        //Retornar a escolha do utilizador
         return Integer.parseInt(choice);
     }
 
+    //Função para verificar se uma string introduzida corresponde a um valor inteiro
     public static int check_int(String arg){
 
         try
