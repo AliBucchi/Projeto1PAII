@@ -21,6 +21,9 @@ public class Projeto1PAII {
                 case 3:
                     sudoku.game();
                     break;
+
+                default:
+                    Option = 4;
             }
         } while (Option != 4 );
     }
