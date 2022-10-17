@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class adivinha {
     public static void num_adivinha() {
+        String user_val;
         int palpite = 0;
         int sorteado;
         int tentativas = 0;
@@ -19,8 +20,11 @@ public class adivinha {
             System.out.printf("\n-----------------\n");
             System.out.println("Número de tentativas: " + tentativas);
 
-            System.out.print("Qual seu palpite: ");
-            palpite = entrada.nextInt();
+            do{
+                System.out.print("Qual seu palpite: ");
+                user_val = entrada.nextLine();
+            }while(menu.check_int(user_val) == 0);
+            palpite = Integer.parseInt(user_val);
             tentativas++;
 
             if (palpite > sorteado) {

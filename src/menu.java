@@ -4,6 +4,7 @@ import java.util.*;
 public class menu {
     public static int menu_principal() {
         Scanner ler = new Scanner(System.in);
+        String choice;
 
         System.out.println("\n\nEscolha uma das opções de jogos a seguir: ");
 
@@ -12,7 +13,24 @@ public class menu {
         System.out.println("Digite 3 para: Sudoku simplificado");
         System.out.println("Digite 4 para: Encerrar e sair dos jogo");
 
-        System.out.print("Escolha a sua opção: ");
-        return ler.nextInt();
+        do{
+            System.out.print("Escolha a sua opção: ");
+            choice = ler.nextLine();
+        }while(check_int(choice) == 0);
+
+        return Integer.parseInt(choice);
+    }
+
+    public static int check_int(String arg){
+
+        try
+        {
+            Integer.parseInt(arg);
+            return 1;
+        }
+        catch (NumberFormatException e)
+        {
+            return 0;
+        }
     }
 }

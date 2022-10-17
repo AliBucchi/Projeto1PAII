@@ -6,11 +6,21 @@ public class padrao {
         Scanner ler = new Scanner(System.in);
 
         System.out.println("\nDesenho dos padrões\n");
+        String Tamanho;
         int tamanhoPadrao;
         int i, j, k;
 
-        System.out.println("Escolha o tamanho do padrão a ser criado com um numero entre 1 e 10: ");
-        tamanhoPadrao = ler.nextInt();
+        do{
+            do{
+                System.out.println("Escolha o tamanho do padrão a ser criado com um numero entre 1 e 10: ");
+                Tamanho = ler.nextLine();
+            }while(menu.check_int(Tamanho) == 0);
+
+            tamanhoPadrao = Integer.parseInt(Tamanho);
+
+        }while(tamanhoPadrao < 1 || tamanhoPadrao > 10);
+
+
 
         System.out.println("Padrão A");
         for (i = 1; i <= tamanhoPadrao; i++) {

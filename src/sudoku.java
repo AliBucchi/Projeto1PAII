@@ -12,12 +12,10 @@ public class sudoku {
         int[][] position = new int[9][9];
         int[] possible_val = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        //no idea what these are for bruh
-        ArrayList<String> Pos_linha = new ArrayList<String>();
-        ArrayList<String> Pos_coluna = new ArrayList<String>();
+        String CheckInput;
 
         int i = 0, k = 0, j = 0, h = 0;
-        int Linha = 0, Coluna = 0, valid_pos = 0, numcheck = 0, Valor_Cell = 0;
+        int Linha = 0, Coluna = 0, valid_pos = 0, numcheck = 0, Valor_Cell = 0, total_cell = 0;
 
         int ans = 1, read_ans = 0, ans_check = 0;
 
@@ -50,19 +48,38 @@ public class sudoku {
                     }
                 }
                 System.out.print(position[i][k] + " ");
+                if(position[i][k] == 0){
+                    total_cell++;
+                }
             }
             System.out.println(" ");
         }
+
         while(ans == 1){
+            valid_pos = 0;
             //selecionar posição na matriz
             do{
                 System.out.println("Selecione uma posição no jogo:");
 
-                System.out.println("Linha: ");
-                Linha = ler.nextInt()-1;
+                do{
+                    do{
+                        System.out.println("Linha (1 -> 9): ");
+                        CheckInput = ler.nextLine();
+                    }while(menu.check_int(CheckInput) == 0);
 
-                System.out.println("Coluna: ");
-                Coluna = ler.nextInt()-1;
+                    Linha = Integer.parseInt(CheckInput)-1;
+
+                }while(Linha < 0 || Linha > 8);
+
+                do{
+                    do{
+                        System.out.println("Coluna (1 -> 9): ");
+                        CheckInput = ler.nextLine();
+                    }while(menu.check_int(CheckInput) == 0);
+
+                    Coluna = Integer.parseInt(CheckInput)-1;
+                }while(Coluna < 0 || Coluna > 8);
+
 
                 if(position[Linha][Coluna] == 0){
                     valid_pos = 1;
@@ -98,7 +115,6 @@ public class sudoku {
 
                             }
                             if(numcheck == 1){
-                                System.out.println("Coom");
                                 valid_nums.remove(h);
                             }
                             numcheck = 0;
@@ -124,7 +140,6 @@ public class sudoku {
                             numcheck = 0;
 
                         }
-
                     }
                 }
             }
@@ -136,10 +151,15 @@ public class sudoku {
             }
             else{
                 System.out.println("Os numeros disponiveis são: " + valid_nums);
+                total_cell--;
 
                 while (numcheck == 0){
-                    System.out.println("Introduza um destes " + valid_nums.size() + " valores: ");
-                    Valor_Cell = ler.nextInt();
+                    do{
+                        System.out.println("Introduza um destes " + valid_nums.size() + " valores: ");
+                        CheckInput = ler.nextLine();
+                    }while(menu.check_int(CheckInput) == 0);
+
+                    Valor_Cell = Integer.parseInt(CheckInput);
 
                     for(h = 0; h < valid_nums.size(); h++){
                         if(Valor_Cell == valid_nums.get(h)){
@@ -162,16 +182,28 @@ public class sudoku {
                     }
                     System.out.println(" ");
                 }
+            }
 
-                //verificar se o utilizador deseja continuar
+            //verificar se o utilizador deseja continuar
+            if(total_cell == 0){
+                ans_check = 1;
+                System.out.println("Já não é possível modificar nehuma posição.");
+            }
+            else{
                 ans_check = 0;
-                while(ans_check == 0){
-                    System.out.println("Para terminar, introduza o número 0.\nPara continuar introduza o nuúmero 1: ");
-                    read_ans = ler.nextInt();
-                    if(read_ans == 0 || read_ans == 1){
-                        ans = read_ans;
-                        ans_check = 1;
-                    }
+            }
+
+            while(ans_check == 0) {
+
+                do {
+                    System.out.println("\nPara terminar, introduza o número 0.\nPara continuar introduza o nuúmero 1: ");
+                    CheckInput = ler.nextLine();
+                } while (menu.check_int(CheckInput) == 0);
+
+                read_ans = Integer.parseInt(CheckInput);
+                if (read_ans == 0 || read_ans == 1) {
+                    ans = read_ans;
+                    ans_check = 1;
                 }
             }
         }
