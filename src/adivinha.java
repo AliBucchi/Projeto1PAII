@@ -13,9 +13,9 @@ public class adivinha {
 
         Random geradorDeAleatorios = new Random();
 
-        //Gerar um número de 1 a 1000
-        sorteado = geradorDeAleatorios.nextInt(1000) + 1;
-        System.out.println("Número entre 1 e 1000 sorteado!");
+        //Gerar um número de 0 a 1000
+        sorteado = geradorDeAleatorios.nextInt(1000);
+        System.out.println("Número entre 0 e 1000 sorteado!");
 
         do {
             System.out.printf("\n-----------------\n");

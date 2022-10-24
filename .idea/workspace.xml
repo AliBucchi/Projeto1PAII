@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e9ab46-dbc2-4cfb-b2c0-11500795b3be" name="Changes" comment="Versão 1.1">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Executável/Projeto1PAII.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Executável/Projeto1PAII.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Executável/adivinha.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Executável/manifest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Executável/menu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Executável/padrao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Executável/sudoku.class" afterDir="false" />
+    <list default="true" id="98e9ab46-dbc2-4cfb-b2c0-11500795b3be" name="Changes" comment="Primeira utilização de classes.">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_10_2022_14_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_10_2022_14_06__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Projeto1PAII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projeto1PAII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adivinha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adivinha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/padrao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/padrao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sudoku.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +114,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeira utilização de classes." />
