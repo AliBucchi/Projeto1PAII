@@ -5,7 +5,6 @@ public class Projeto1PAII {
 
     public static void main(String[] args) {
         int Option = 0;
-        Scanner ler = new Scanner(System.in);
         do {
             Option = menu.menu_principal();
 
@@ -25,8 +24,15 @@ public class Projeto1PAII {
                     sudoku.game();
                     break;
 
+                case 4:
+                    System.out.println("Pressione ENTER para encerrar o programa");
+                    try{System.in.read();}
+                    catch(Exception e){}
+                    break;
+
                 default:
-                    Option = 4;
+                    Option = 0;
+                    System.out.println("\nPor favor, introduza um numero inteiro positivo entre 1 e 4");
             }
         } while (Option != 4 );
     }
