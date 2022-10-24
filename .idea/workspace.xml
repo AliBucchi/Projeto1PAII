@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e9ab46-dbc2-4cfb-b2c0-11500795b3be" name="Changes" comment="Versão 1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sudoku.java" afterDir="false" />
-    </list>
+    <list default="true" id="98e9ab46-dbc2-4cfb-b2c0-11500795b3be" name="Changes" comment="v1.1.3&#10;Correção dos valores no jogo de adivinha:&#10;&#10;Anteriormente, os valores pertenciam ao intervalo [1,1000]&#10;Agora, o intervalo é [0,1000], como especificado no enunciado." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,13 +116,13 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeira utilização de classes." />
     <MESSAGE value="Versão 1.0" />
     <MESSAGE value="Versão 1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versão 1.1" />
+    <MESSAGE value="v1.1.3&#10;Correção dos valores no jogo de adivinha:&#10;&#10;Anteriormente, os valores pertenciam ao intervalo [1,1000]&#10;Agora, o intervalo é [0,1000], como especificado no enunciado." />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1.3&#10;Correção dos valores no jogo de adivinha:&#10;&#10;Anteriormente, os valores pertenciam ao intervalo [1,1000]&#10;Agora, o intervalo é [0,1000], como especificado no enunciado." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
